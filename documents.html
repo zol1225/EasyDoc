@@ -1,0 +1,332 @@
+﻿<!doctype html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyDoc - Ирсэн бичиг баримт</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-page">
+    <div class="dashboard-layout">
+      <aside class="sidebar">
+        <h2><a href="index.html">EasyDoc</a></h2>
+        <nav>
+          <a href="dashboard.html" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-grid-1x2"></i><span>Хянах самбар</span></span>
+          </a>
+          <a href="documents.html" class="nav-link nav-main has-children active">
+            <span class="nav-left"><i class="bi bi-file-earmark-text"></i><span>Бичиг баримт</span></span>
+            <i class="bi bi-chevron-down nav-caret"></i>
+          </a>
+          <a href="documents.html" class="nav-link nav-sub active-sub">
+            <span class="nav-left"><i class="bi bi-arrow-down-right"></i><span>Ирсэн бичиг баримт</span></span>
+            <i class="bi bi-chevron-right nav-caret"></i>
+          </a>
+          <a href="documents-completed.html" class="nav-link nav-sub">
+            <span class="nav-left"><i class="bi bi-arrow-up-right"></i><span>Явсан бичиг баримт</span></span>
+          </a>
+          <a href="document-review.html" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-folder2-open"></i><span>Миний бичиг баримт</span></span>
+          </a>
+          <span class="nav-divider"></span>
+          <a href="#" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-card-list"></i><span>Тайлан</span></span>
+          </a>
+          <a href="#" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-buildings"></i><span>Байгууллага бүртгэх</span></span>
+          </a>
+          <span class="nav-divider"></span>
+          <a href="#" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-telephone"></i><span>Лавлах</span></span>
+          </a>
+        </nav>
+      </aside>
+
+      <section class="board board-docs board-inbox">
+        <header class="board-top inbox-top">
+          <div class="board-title"></div>
+          <div class="user">
+            <span class="bell"><i class="bi bi-bell"></i></span>
+            <div class="avatar">A</div>
+            <div>
+              <strong>Anu-Ujin</strong>
+              <p>anuka0112@gmail.com</p>
+            </div>
+          </div>
+        </header>
+
+        <div class="docs-breadcrumb">
+          <span>Бичиг баримт</span>
+          <i class="bi bi-chevron-right"></i>
+          <strong>Ирсэн бичиг баримт</strong>
+        </div>
+
+        <div class="docs-head docs-head-inbox">
+          <h3>Ирсэн бичиг баримт</h3>
+        </div>
+
+        <div class="inbox-tools">
+          <div class="inbox-tabs">
+            <button class="inbox-tab active" data-filter="all">Нийт <span>7</span></button>
+            <button class="inbox-tab" data-filter="new">Шинэ <span>3</span></button>
+            <button class="inbox-tab" data-filter="progress">Шилжүүлсэн <span>1</span></button>
+            <button class="inbox-tab" data-filter="done">Шийдвэрлэсэн <span>3</span></button>
+          </div>
+          <div class="inbox-search-group">
+            <div class="inbox-search">
+              <i class="bi bi-search"></i>
+              <input type="text" placeholder="Search..." />
+            </div>
+            <button class="inbox-date-btn"><i class="bi bi-calendar-check"></i> 2026.02.06</button>
+          </div>
+        </div>
+
+        <div class="table-shell inbox-table-shell">
+          <table class="doc-table inbox-table">
+            <thead>
+              <tr>
+                <th>Д/Д</th>
+                <th>Төлөв</th>
+                <th>Бичгийн огноо</th>
+                <th>АБ дугаар</th>
+                <th>Хаанаас ирсэн</th>
+                <th>Товч утга</th>
+                <th>Хуудасны тоо</th>
+                <th>Хариутай эсэх</th>
+                <th>Хэнд</th>
+                <th>Шийдвэрлэх огноо</th>
+                <th>Үйлдэл</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="inbox-row" data-docno="21" data-status="new">
+                <td>21</td>
+                <td><span class="status new">шинэ</span></td>
+                <td>2026.01.02</td>
+                <td>Б2045982536</td>
+                <td>Баянгол дүүргийн Засаг даргын тамгын газар</td>
+                <td>Шинэчээр ажиллахаас татгалзах тухай</td>
+                <td>2</td>
+                <td><span class="status yes">Тийм</span></td>
+                <td>Г.Баярмаа</td>
+                <td>Хамтран ажиллах тухай</td>
+                <td class="actions"><a class="mini-link view-inbox" href="#" data-docno="21">Харах</a></td>
+              </tr>
+              <tr class="inbox-row" data-docno="22" data-status="new">
+                <td>22</td>
+                <td><span class="status new">шинэ</span></td>
+                <td>2026.01.02</td>
+                <td>Б2045982536</td>
+                <td>Баянгол дүүргийн Засаг даргын тамгын газар</td>
+                <td>Шинэчээр ажиллахаас татгалзах тухай</td>
+                <td>2</td>
+                <td><span class="status yes">Тийм</span></td>
+                <td>Г.Баярмаа</td>
+                <td>Хамтран ажиллах тухай</td>
+                <td class="actions"><a class="mini-link view-inbox" href="#" data-docno="22">Харах</a></td>
+              </tr>
+              <tr class="inbox-row" data-docno="23" data-status="new">
+                <td>23</td>
+                <td><span class="status new">шинэ</span></td>
+                <td>2026.01.02</td>
+                <td>Б2045982536</td>
+                <td>Баянгол дүүргийн Засаг даргын тамгын газар</td>
+                <td>Шинэчээр ажиллахаас татгалзах тухай</td>
+                <td>2</td>
+                <td><span class="status yes">Тийм</span></td>
+                <td>Г.Баярмаа</td>
+                <td>Хамтран ажиллах тухай</td>
+                <td class="actions"><a class="mini-link view-inbox" href="#" data-docno="23">Харах</a></td>
+              </tr>
+              <tr class="inbox-row" data-docno="24" data-status="done">
+                <td>24</td>
+                <td><span class="status done">шийдвэрлэсэн</span></td>
+                <td>2026.01.02</td>
+                <td>Б2045982536</td>
+                <td>Баянгол дүүргийн Засаг даргын тамгын газар</td>
+                <td>Шинэчээр ажиллахаас татгалзах тухай</td>
+                <td>2</td>
+                <td><span class="status yes">Тийм</span></td>
+                <td>Г.Баярмаа</td>
+                <td>Хамтран ажиллах тухай</td>
+                <td class="actions"><a class="mini-link view-inbox" href="#" data-docno="24">Харах</a></td>
+              </tr>
+              <tr class="inbox-row" data-docno="25" data-status="progress">
+                <td>25</td>
+                <td><span class="status progress">шилжүүлсэн</span></td>
+                <td>2026.01.02</td>
+                <td>Б2045982536</td>
+                <td>Баянгол дүүргийн Засаг даргын тамгын газар</td>
+                <td>Шинэчээр ажиллахаас татгалзах тухай</td>
+                <td>2</td>
+                <td><span class="status yes">Тийм</span></td>
+                <td>Г.Баярмаа</td>
+                <td>Хамтран ажиллах тухай</td>
+                <td class="actions"><a class="mini-link view-inbox" href="#" data-docno="25">Харах</a></td>
+              </tr>
+              <tr class="inbox-row" data-docno="26" data-status="done">
+                <td>26</td>
+                <td><span class="status done">шийдвэрлэсэн</span></td>
+                <td>2026.01.02</td>
+                <td>Б2045982536</td>
+                <td>Баянгол дүүргийн Засаг даргын тамгын газар</td>
+                <td>Шинэчээр ажиллахаас татгалзах тухай</td>
+                <td>2</td>
+                <td><span class="status yes">Тийм</span></td>
+                <td>Г.Баярмаа</td>
+                <td>Хамтран ажиллах тухай</td>
+                <td class="actions"><a class="mini-link view-inbox" href="#" data-docno="26">Харах</a></td>
+              </tr>
+              <tr class="inbox-row" data-docno="27" data-status="done">
+                <td>27</td>
+                <td><span class="status done">шийдвэрлэсэн</span></td>
+                <td>2026.01.02</td>
+                <td>Б2045982536</td>
+                <td>Баянгол дүүргийн Засаг даргын тамгын газар</td>
+                <td>Шинэчээр ажиллахаас татгалзах тухай</td>
+                <td>2</td>
+                <td><span class="status yes">Тийм</span></td>
+                <td>Г.Баярмаа</td>
+                <td>Хамтран ажиллах тухай</td>
+                <td class="actions"><a class="mini-link view-inbox" href="#" data-docno="27">Харах</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="inbox-footer">
+          <span>Нийт 186 ширхэг</span>
+          <div class="inbox-pagination">
+            <button class="pager-icon" aria-label="prev"><i class="bi bi-chevron-left"></i></button>
+            <span>Өмнөх</span>
+            <span class="page-num">1</span>
+            <button class="page-btn active">2</button>
+            <span class="dots">...</span>
+            <span>Дараах</span>
+            <button class="pager-icon" aria-label="next"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="inboxDetailModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="inboxDetailTitle">
+      <div class="outbox-detail-modal">
+        <button id="closeInboxModal" class="close" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+        <h3 id="inboxDetailTitle">Ирсэн бичгийн дугаар № - <span id="inboxModalNo">21</span></h3>
+        <div class="outbox-detail-grid">
+          <article class="outbox-panel">
+            <h4>Баримт бичгийн дэлгэрэнгүй мэдээлэл</h4>
+            <div class="outbox-kv two-col">
+              <div><span>Илгээсэн байгууллага:</span><strong><i class="bi bi-building"></i> Баянгол дүүргийн ЗДТГ</strong></div>
+              <div><span>Хүлээн авсан хүн:</span><strong><i class="bi bi-person"></i> Г.Баярмаа</strong></div>
+              <div><span>Бичгийн огноо:</span><strong><i class="bi bi-calendar3"></i> 2026.01.02</strong></div>
+              <div><span>Шийдвэрлэх огноо:</span><strong><i class="bi bi-calendar3"></i> 2026.03.05</strong></div>
+              <div><span>АБ дугаар:</span><strong><i class="bi bi-file-earmark-text"></i> Б2045982536</strong></div>
+              <div><span>Хуудасны тоо:</span><strong><i class="bi bi-file-earmark-text"></i> 2 хуудас</strong></div>
+              <div><span>Хариутай эсэх:</span><strong><span class="status yes">Тийм</span></strong></div>
+              <div><span>Файл:</span><strong class="file-pill">PDF file</strong></div>
+            </div>
+            <div class="outbox-note">
+              <span>Товч утга:</span>
+              <p>Шинэчээр ажиллахаас татгалзах тухай</p>
+            </div>
+          </article>
+          <div class="outbox-side-stack">
+            <article class="outbox-panel compact">
+              <h4>Бүртгэсэн ажилтаны мэдээлэл</h4>
+              <div class="profile-row">
+                <div class="avatar-lg">MC<div class="dot"></div></div>
+                <div class="profile-meta">
+                  <p><span>Овог нэр:</span> Н.Баяраа</p>
+                  <p><span>Албан тушаал:</span> Мэргэжилтэн</p>
+                  <p><span>Утасны дугаар:</span> 99542556</p>
+                  <p><span>Бүртгэсэн огноо:</span> 2026.01.16</p>
+                </div>
+              </div>
+            </article>
+            <article class="outbox-panel compact">
+              <div class="panel-head">
+                <h4>Хяналтын ажилтан:</h4>
+                <span class="status yes">Баталсан</span>
+              </div>
+              <div class="profile-row">
+                <div class="avatar-lg">MC<div class="dot"></div></div>
+                <div class="profile-meta single">
+                  <p><span>Хянасан ажилтан:</span> Н.Баяраа /мэргэжилтэн, стратегийн алба/</p>
+                </div>
+              </div>
+            </article>
+            <article class="outbox-panel compact">
+              <div class="panel-head">
+                <h4>Шийдвэрлэлтийн төлөв:</h4>
+                <span class="status wait">хүлээгдэж байгаа</span>
+              </div>
+              <div class="profile-row">
+                <div class="avatar-lg">MC<div class="dot"></div></div>
+                <div class="profile-meta single">
+                  <p><span>Дараагийн шат:</span> Удирдлагын баталгаажуулалт</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="inboxNewModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="inboxNewTitle">
+      <div class="outbox-detail-modal inbox-new-modal">
+        <button id="closeInboxNewModal" class="close" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+        <h3 id="inboxNewTitle">Ирсэн бичгийн дугаар № - <span id="inboxNewModalNo">21</span></h3>
+
+        <article class="outbox-panel inbox-new-info">
+          <h4>Баримт бичгийн дэлгэрэнгүй мэдээлэл</h4>
+          <div class="outbox-kv two-col">
+            <div><span>Илгээсэн байгууллага:</span><strong><i class="bi bi-building"></i> Мобиком</strong></div>
+            <div><span>Хүлээн авсан байгууллага:</span><strong><i class="bi bi-building"></i> Мобинет</strong></div>
+            <div><span>Илгээсэн хүн:</span><strong><i class="bi bi-person"></i> Г.Баяртуяа</strong></div>
+            <div><span>Хүлээн авсан хүн:</span><strong><i class="bi bi-person"></i> С.Марал</strong></div>
+            <div><span>Явуулсан огноо:</span><strong><i class="bi bi-calendar3"></i> 2025.02.05</strong></div>
+            <div><span>Хуудасны тоо:</span><strong><i class="bi bi-file-earmark-text"></i> 4 хуудас</strong></div>
+            <div><span>Хариутай эсэх:</span><strong><span class="status yes">Тийм</span></strong></div>
+            <div><span>Баримт бичиг файл:</span><strong class="file-pill"><i class="bi bi-file-earmark-text"></i> PDF file</strong></div>
+          </div>
+          <div class="outbox-note">
+            <span>Товч утга:</span>
+            <p>Хамтран ажиллах тухай</p>
+          </div>
+        </article>
+
+        <div class="inbox-new-form">
+          <label>Алба газар сонгох</label>
+          <div class="inbox-new-input">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Албан газар оруулах" />
+          </div>
+
+          <label>Ажилтан сонгох</label>
+          <div class="inbox-new-input">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Ажилтны нэр оруулах" />
+          </div>
+        </div>
+
+        <div class="inbox-new-actions">
+          <button id="inboxNewCancelBtn" class="ghost-btn" type="button">Цуцлах</button>
+          <button id="inboxNewTransferBtn" class="inbox-new-transfer-btn" type="button">Шилжүүлэх</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

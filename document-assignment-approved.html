@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyDoc - Баталгаажсан бичиг</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-page">
+    <div class="dashboard-layout">
+      <aside class="sidebar">
+        <h2><a href="index.html">EasyDoc</a></h2>
+        <nav>
+          <a href="dashboard.html" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-grid-1x2"></i><span>Хянах самбар</span></span>
+            <i class="bi bi-chevron-right nav-caret"></i>
+          </a>
+          <a href="documents.html" class="nav-link nav-main has-children">
+            <span class="nav-left"><i class="bi bi-file-earmark-text"></i><span>Бичиг баримт</span></span>
+            <i class="bi bi-chevron-down nav-caret"></i>
+          </a>
+          <a href="document-review.html" class="nav-link nav-sub active-sub">
+            <span class="nav-left"><i class="bi bi-arrow-up-right"></i><span>Миний бичиг баримт</span></span>
+            <i class="bi bi-chevron-right nav-caret"></i>
+          </a>
+          <span class="nav-divider"></span>
+          <a href="#" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-card-list"></i><span>Тайлан</span></span>
+          </a>
+          <a href="#" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-buildings"></i><span>Байгууллага бүртгэх</span></span>
+          </a>
+          <span class="nav-divider"></span>
+          <a href="#" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-telephone"></i><span>Лавлах</span></span>
+          </a>
+        </nav>
+      </aside>
+
+      <section class="board board-docs board-assignment">
+        <header class="board-top assignment-top">
+          <div class="board-title"></div>
+          <div class="user">
+            <span class="bell"><i class="bi bi-bell"></i></span>
+            <div class="avatar">A</div>
+            <div>
+              <strong>Anu-Ujin</strong>
+              <p>anuka0112@gmail.com</p>
+            </div>
+          </div>
+        </header>
+
+        <div class="docs-breadcrumb">
+          <span>Миний бичиг баримт</span>
+          <i class="bi bi-chevron-right"></i>
+          <strong>Бичиг баримт үүсгэх</strong>
+        </div>
+
+        <div class="assignment-steps">
+          <div class="assignment-step">
+            <span class="assignment-icon"><i class="bi bi-pencil-square"></i></span>
+            <p>Бичиг баримт үүсгэх</p>
+          </div>
+          <div class="assignment-step">
+            <span class="assignment-icon"><i class="bi bi-file-earmark-text"></i></span>
+            <p>Бичиг баримт хянах</p>
+          </div>
+          <div class="assignment-step">
+            <span class="assignment-icon"><i class="bi bi-person-plus"></i></span>
+            <p>Харилцагч руу илгээх</p>
+          </div>
+        </div>
+
+        <div class="assignment-shell">
+          <article class="assignment-preview">
+            <div class="assignment-canvas">
+              <div class="assignment-sheet">
+                <div class="assignment-sheet-head">
+                  <img src="Mobicomnewlogo.png" alt="Mobicom logo" />
+                </div>
+                <div class="assignment-sheet-lines">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <aside class="assignment-side">
+            <article class="assignment-card approved-detail-card">
+              <div class="assignment-card-head">
+                <h4>Баримт бичгийн дэлгэрэнгүй мэдээлэл</h4>
+              </div>
+
+              <div class="approved-kv-grid">
+                <div>
+                  <span>Төрөл:</span>
+                  <p><i class="bi bi-file-earmark-text"></i> Албан бичиг</p>
+                </div>
+                <div>
+                  <span>Цаасны төрөл:</span>
+                  <p><i class="bi bi-file-earmark-text"></i> A4 /Албан бичиг/</p>
+                </div>
+                <div>
+                  <span>Шийдвэрлэх огноо</span>
+                  <p><i class="bi bi-calendar2-week"></i> 2025.02.05</p>
+                </div>
+                <div>
+                  <span>Хуудасны тоо:</span>
+                  <p><i class="bi bi-file-earmark-text"></i> 4 хуудас</p>
+                </div>
+              </div>
+
+              <div class="approved-inline-row">
+                <div>
+                  <span>Хариутай эсэх:</span>
+                  <p><span class="approved-yes-pill">Тийм</span></p>
+                </div>
+                <div>
+                  <span>Баримт бичиг файл:</span>
+                  <p><span class="approved-file-pill">PDF file</span></p>
+                </div>
+              </div>
+
+              <div class="approved-topic">
+                <span>Товч утга:</span>
+                <p>Хамтран ажиллах тухай</p>
+              </div>
+            </article>
+
+            <article class="assignment-card approved-send-card">
+              <div class="assignment-card-head">
+                <h4>Байгууллага руу илгээх</h4>
+              </div>
+              <label class="assignment-label">Илгээх байгууллага сонгох</label>
+              <div class="assignment-search-wrap">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Байгууллага оруулах" />
+              </div>
+            </article>
+
+            <button id="approvedSendBtn" type="button" class="assignment-save-btn">Илгээх</button>
+          </aside>
+        </div>
+      </section>
+    </div>
+
+    <div class="modal-backdrop hidden" id="approvedSendSuccessModal">
+      <div class="success-pop assignment-success-pop">
+        <button class="close" id="closeApprovedSendSuccess" aria-label="Хаах">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        <div class="success-icon">
+          <i class="bi bi-check-lg"></i>
+        </div>
+        <h4>Амжилттай</h4>
+        <p>Баримт илгээгдлээ.</p>
+        <div class="success-actions">
+          <button type="button" class="primary-btn" id="okApprovedSendSuccess">Ойлголоо</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

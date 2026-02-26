@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyDoc - Бичиг баримт үүсгэх</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-page">
+    <div class="dashboard-layout">
+      <aside class="sidebar">
+        <h2><a href="index.html">EasyDoc</a></h2>
+        <nav>
+          <a href="dashboard.html" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-grid-1x2"></i><span>Хянах самбар</span></span>
+            <i class="bi bi-chevron-right nav-caret"></i>
+          </a>
+          <a href="documents.html" class="nav-link nav-main has-children">
+            <span class="nav-left"><i class="bi bi-file-earmark-text"></i><span>Бичиг баримт</span></span>
+            <i class="bi bi-chevron-down nav-caret"></i>
+          </a>
+          <a href="document-review.html" class="nav-link nav-sub active-sub">
+            <span class="nav-left"><i class="bi bi-arrow-up-right"></i><span>Миний бичиг баримт</span></span>
+            <i class="bi bi-chevron-right nav-caret"></i>
+          </a>
+          <span class="nav-divider"></span>
+          <a href="#" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-card-list"></i><span>Тайлан</span></span>
+          </a>
+          <a href="#" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-buildings"></i><span>Байгууллага бүртгэх</span></span>
+          </a>
+          <span class="nav-divider"></span>
+          <a href="#" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-telephone"></i><span>Лавлах</span></span>
+          </a>
+        </nav>
+      </aside>
+
+      <section class="board board-docs board-create">
+        <header class="board-top create-top">
+          <div class="board-title"></div>
+          <div class="user">
+            <span class="bell"><i class="bi bi-bell"></i></span>
+            <div class="avatar">A</div>
+            <div>
+              <strong>Anu-Ujin</strong>
+              <p>anuka0112@gmail.com</p>
+            </div>
+          </div>
+        </header>
+
+        <div class="docs-breadcrumb">
+          <span>Миний бичиг баримт</span>
+          <i class="bi bi-chevron-right"></i>
+          <strong>Бичиг баримт үүсгэх</strong>
+        </div>
+
+        <div class="create-layout">
+          <article class="create-form-card">
+            <h4>Бичиг &amp; Хавсралт</h4>
+            <p class="create-sub">Бичиг баримтын төрөл болон хавсралт оруулан албан бичиг үүсгэнэ үү.</p>
+
+            <div class="create-field">
+              <label>Баримтын төрөл</label>
+              <button class="create-select-btn" id="docTypeToggle" type="button">
+                <span id="docTypeLabel">Албан бичиг</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div class="create-dropdown hidden" id="docTypeMenu">
+                <button type="button" class="create-dropdown-item" data-value="Тушаал">
+                  <span>Тушаал</span>
+                </button>
+                <button type="button" class="create-dropdown-item selected" data-value="Албан бичиг">
+                  <i class="bi bi-check2"></i>
+                  <span>Албан бичиг</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="create-field">
+              <label>Хуудасны төрөл</label>
+              <button class="create-select-btn" id="pageTypeToggle" type="button">
+                <span id="pageTypeLabel">Төрөл сонгох</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div class="create-dropdown hidden" id="pageTypeMenu">
+                <button type="button" class="create-dropdown-item" data-value="A5 /Албан бичиг/">
+                  <span>A5 /Албан бичиг/</span>
+                </button>
+                <button type="button" class="create-dropdown-item selected" data-value="A4 /Албан бичиг/">
+                  <i class="bi bi-check2"></i>
+                  <span>A4 /Албан бичиг/</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="create-field">
+              <label>Тэргүү</label>
+              <input type="text" placeholder="Тэргүү бичих" />
+            </div>
+
+            <div class="create-field">
+              <label>Агуулга оруулах</label>
+              <button class="content-open-btn" id="openContentEditor" type="button">Агуулга оруулах</button>
+            </div>
+
+            <div class="create-grid-two">
+              <div class="create-field">
+                <label>Нийт хуудасны тоо</label>
+                <input type="text" placeholder="Оруулах" />
+              </div>
+              <div class="create-field create-date-field">
+                <label>Шийдвэрлэх огноо</label>
+                <button class="create-date-btn" id="decisionDateToggle" type="button">
+                  <span id="decisionDateLabel">Оруулах</span>
+                  <i class="bi bi-calendar2-week"></i>
+                </button>
+                <div class="calendar-pop hidden" id="decisionDatePop">
+                  <div class="calendar-head">
+                    <button type="button" class="calendar-nav"><i class="bi bi-chevron-left"></i></button>
+                    <strong>Jan 2026</strong>
+                    <button type="button" class="calendar-nav"><i class="bi bi-chevron-right"></i></button>
+                  </div>
+                  <div class="calendar-week">
+                    <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+                  </div>
+                  <div class="calendar-days">
+                    <span class="muted-day">28</span><span class="muted-day">29</span><span class="muted-day">30</span><span class="muted-day">31</span>
+                    <button type="button">1</button><button type="button">2</button><button type="button">3</button>
+                    <button type="button">4</button><button type="button">5</button><button type="button">6</button>
+                    <button type="button" class="is-selected">7</button>
+                    <button type="button">8</button><button type="button">9</button><button type="button">10</button>
+                    <button type="button">11</button><button type="button">12</button><button type="button">13</button><button type="button">14</button>
+                    <button type="button">15</button><button type="button">16</button><button type="button">17</button>
+                    <button type="button">18</button><button type="button">19</button><button type="button">20</button><button type="button">21</button>
+                    <button type="button">22</button><button type="button">23</button><button type="button">24</button>
+                    <button type="button">25</button><button type="button">26</button><button type="button">27</button><button type="button">28</button>
+                    <button type="button">29</button><button type="button">30</button><button type="button">31</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="create-field">
+              <label>Хариутай эсэх</label>
+              <div class="create-radio-row">
+                <label><input type="radio" name="reply" checked /> Тийм</label>
+                <label><input type="radio" name="reply" /> Үгүй</label>
+              </div>
+            </div>
+
+            <div class="create-field">
+              <label>Ирсэн бичгийн хариу</label>
+              <div class="search-input-wrap">
+                <i class="bi bi-search"></i>
+                <input id="replySearchInput" type="text" placeholder="Ирсэн бичиг оруулах" />
+              </div>
+              <div class="create-dropdown hidden" id="replySearchMenu">
+                <button type="button" class="create-dropdown-item"><span>Мэдээлэл хүргэх тухай</span></button>
+                <button type="button" class="create-dropdown-item selected">
+                  <i class="bi bi-check2"></i>
+                  <span>Хамтран ажиллах санал хүргүүлэх тухай</span>
+                </button>
+                <button type="button" class="create-dropdown-item"><span>Хамтран ажиллах санал хүргүүлэх тухай</span></button>
+              </div>
+            </div>
+
+            <div class="create-field">
+              <label>Хавсралт</label>
+              <div class="create-radio-row">
+                <label><input type="radio" name="attach" checked /> Хавсралтгүй</label>
+                <label><input type="radio" name="attach" /> Агуулгаар</label>
+              </div>
+            </div>
+
+            <div class="create-actions">
+              <a href="document-review.html" class="ghost-btn">Болих</a>
+              <button class="primary-btn" id="createTransferBtn" type="button">Шилжүүлэх</button>
+            </div>
+          </article>
+
+          <article class="create-preview-card">
+            <div class="create-paper">
+              <div class="create-paper-header real">
+                <div class="mobi-logo">
+                  <img src="Mobicomnewlogo.png" alt="Mobicom logo" />
+                </div>
+                <div class="create-meta">
+                  <strong>МОБИКОМ КОРПОРАЦИ ХХК</strong>
+                  <p>14220 Улаанбаатар хот, Сүхбаатар дүүрэг, 1-р хороо</p>
+                  <p>https://www.mobicom.mn</p>
+                </div>
+              </div>
+              <div class="create-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <div class="modal-backdrop hidden" id="contentEditorModal">
+      <div class="editor-modal-card">
+        <div class="editor-head">
+          <h3>Агуулга оруулах</h3>
+          <button class="close" id="closeContentEditor" aria-label="Хаах">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+        <div class="editor-body">
+          <aside class="editor-side">
+            <div class="editor-side-blank"></div>
+            <div class="editor-side-fields">
+              <input type="text" placeholder="Гарчиг оруулах" />
+              <input type="text" placeholder="Гарчиг оруулах" />
+              <div class="editor-send-wrap">
+                <input type="text" placeholder="Бичих" />
+                <button type="button" class="editor-send-btn"><i class="bi bi-send"></i></button>
+              </div>
+            </div>
+          </aside>
+          <section class="editor-workspace">
+            <div class="editor-toolbar">
+              <div class="tool-group">
+                <button type="button">B</button>
+                <button type="button">I</button>
+                <button type="button">U</button>
+              </div>
+              <div class="tool-group">
+                <button type="button"><i class="bi bi-list-ul"></i></button>
+                <button type="button"><i class="bi bi-list-ol"></i></button>
+                <button type="button"><i class="bi bi-link-45deg"></i></button>
+              </div>
+              <div class="tool-group">
+                <button type="button"><i class="bi bi-image"></i></button>
+                <button type="button"><i class="bi bi-table"></i></button>
+                <button type="button"><i class="bi bi-type"></i></button>
+              </div>
+            </div>
+            <div class="editor-paper"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+﻿<!doctype html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyDoc Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-page">
+    <div class="dashboard-layout">
+      <aside class="sidebar">
+        <h2><a href="index.html">EasyDoc</a></h2>
+        <nav>
+          <a href="dashboard.html" class="nav-link nav-main active">
+            <span class="nav-left"><i class="bi bi-grid-1x2"></i><span>Хянах самбар</span></span>
+          </a>
+          <a href="documents.html" class="nav-link nav-main has-children">
+            <span class="nav-left"><i class="bi bi-file-earmark-text"></i><span>Бичиг баримт</span></span>
+            <i class="bi bi-chevron-down nav-caret"></i>
+          </a>
+          <a href="documents.html" class="nav-link nav-sub">
+            <span class="nav-left"><i class="bi bi-arrow-down-right"></i><span>Ирсэн бичиг баримт</span></span>
+            <i class="bi bi-chevron-right nav-caret"></i>
+          </a>
+          <a href="documents-completed.html" class="nav-link nav-sub">
+            <span class="nav-left"><i class="bi bi-arrow-up-right"></i><span>Явсан бичиг баримт</span></span>
+          </a>
+          <a href="document-review.html" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-folder2-open"></i><span>Миний бичиг баримт</span></span>
+          </a>
+          <span class="nav-divider"></span>
+          <a href="#" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-card-list"></i><span>Тайлан</span></span>
+          </a>
+          <a href="#" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-buildings"></i><span>Байгууллага бүртгэх</span></span>
+          </a>
+          <span class="nav-divider"></span>
+          <a href="#" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-telephone"></i><span>Лавлах</span></span>
+          </a>
+        </nav>
+      </aside>
+
+      <section class="board">
+        <header class="board-top">
+          <div class="board-title">Хянах самбар</div>
+          <div class="user">
+            <span class="bell"><i class="bi bi-bell"></i></span>
+            <div class="avatar">A</div>
+            <div>
+              <strong>Anu-Ujin</strong>
+              <p>anuka0112@gmail.com</p>
+            </div>
+          </div>
+        </header>
+
+        <h3>Бичиг баримт хянах самбар</h3>
+
+        <div class="stat-grid">
+          <article class="stat-card purple">
+            <p>Нийт албан бичиг</p>
+            <div class="stat-line"><span><i class="bi bi-file-earmark-text-fill"></i></span><strong>126</strong></div>
+          </article>
+          <article class="stat-card blue">
+            <p>Шинэ албан бичиг</p>
+            <div class="stat-line"><span><i class="bi bi-file-earmark-plus-fill"></i></span><strong>24</strong></div>
+          </article>
+          <article class="stat-card orange">
+            <p>Шилжүүлсэн албан бичиг</p>
+            <div class="stat-line"><span><i class="bi bi-send-fill"></i></span><strong>16</strong></div>
+          </article>
+          <article class="stat-card green">
+            <p>Шийдвэрлэсэн албан бичиг</p>
+            <div class="stat-line"><span><i class="bi bi-patch-check-fill"></i></span><strong>104</strong></div>
+          </article>
+        </div>
+
+        <div class="chart-wrap">
+          <article class="chart-card">
+            <h4>Сар бүрийн бичиг баримтын тоо</h4>
+            <div class="bar-row"><span>1 сар</span><div class="bar-track"><div class="bar purple" style="width:82%"></div></div><b>28</b></div>
+            <div class="bar-row"><span>2 сар</span><div class="bar-track"><div class="bar blue" style="width:41%"></div></div><b>14</b></div>
+            <div class="bar-row"><span>3 сар</span><div class="bar-track"><div class="bar purple" style="width:94%"></div></div><b>32</b></div>
+            <div class="bar-row"><span>4 сар</span><div class="bar-track"><div class="bar blue" style="width:71%"></div></div><b>24</b></div>
+            <div class="bar-row"><span>5 сар</span><div class="bar-track"><div class="bar blue" style="width:32%"></div></div><b>11</b></div>
+            <div class="bar-row"><span>6 сар</span><div class="bar-track"><div class="bar purple" style="width:100%"></div></div><b>34</b></div>
+            <div class="bar-row"><span>7 сар</span><div class="bar-track"><div class="bar blue" style="width:18%"></div></div><b>6</b></div>
+          </article>
+
+          <aside class="history-card">
+            <h4>Сүүлийн түүх</h4>
+            <div class="history-row">
+              <span class="history-icon green"><i class="bi bi-check2-circle"></i></span>
+              <div><p>Албан бичгийн дугаар - 21 шилжүүлсэн</p><small>2 minutes ago</small></div>
+            </div>
+            <div class="history-row">
+              <span class="history-icon blue"><i class="bi bi-file-earmark-plus"></i></span>
+              <div><p>Албан бичгийн дугаар - 26 шинэ</p><small>15 minutes ago</small></div>
+            </div>
+            <div class="history-row">
+              <span class="history-icon orange"><i class="bi bi-send"></i></span>
+              <div><p>Албан бичгийн дугаар - 14 хүлээгдэж байгаа</p><small>2 hours ago</small></div>
+            </div>
+            <div class="history-row">
+              <span class="history-icon green"><i class="bi bi-check2-circle"></i></span>
+              <div><p>Албан бичгийн дугаар - 28 шилжүүлсэн</p><small>3 hours ago</small></div>
+            </div>
+            <div class="history-row">
+              <span class="history-icon green"><i class="bi bi-check2-circle"></i></span>
+              <div><p>Албан бичгийн дугаар - 32 шилжүүлсэн</p><small>3 hours ago</small></div>
+            </div>
+            <a href="#" class="more">Бүгдийг харах</a>
+          </aside>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

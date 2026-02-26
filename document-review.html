@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyDoc - Миний бичиг баримт</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-page">
+    <div class="dashboard-layout">
+      <aside class="sidebar">
+        <h2><a href="index.html">EasyDoc</a></h2>
+        <nav>
+          <a href="dashboard.html" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-grid-1x2"></i><span>Хянах самбар</span></span>
+            <i class="bi bi-chevron-right nav-caret"></i>
+          </a>
+          <a href="documents.html" class="nav-link nav-main has-children">
+            <span class="nav-left"><i class="bi bi-file-earmark-text"></i><span>Бичиг баримт</span></span>
+            <i class="bi bi-chevron-down nav-caret"></i>
+          </a>
+          <a href="document-review.html" class="nav-link nav-sub active-sub">
+            <span class="nav-left"><i class="bi bi-arrow-up-right"></i><span>Миний бичиг баримт</span></span>
+            <i class="bi bi-chevron-right nav-caret"></i>
+          </a>
+          <span class="nav-divider"></span>
+          <a href="#" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-card-list"></i><span>Тайлан</span></span>
+          </a>
+          <a href="#" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-buildings"></i><span>Байгууллага бүртгэх</span></span>
+          </a>
+          <span class="nav-divider"></span>
+          <a href="#" class="nav-link nav-main">
+            <span class="nav-left"><i class="bi bi-telephone"></i><span>Лавлах</span></span>
+          </a>
+        </nav>
+      </aside>
+
+      <section class="board board-docs board-mydocs">
+        <header class="board-top mydocs-top">
+          <div class="board-title"></div>
+          <div class="user">
+            <span class="bell"><i class="bi bi-bell"></i></span>
+            <div class="avatar">A</div>
+            <div>
+              <strong>Anu-Ujin</strong>
+              <p>anuka0112@gmail.com</p>
+            </div>
+          </div>
+        </header>
+
+        <div class="docs-breadcrumb">
+          <strong>Миний бичиг баримт</strong>
+        </div>
+
+        <div class="docs-head docs-head-mydocs">
+          <h3>Үүсгэсэн бичиг баримтууд</h3>
+          <a href="document-create.html" class="primary-btn docs-add-btn">
+            <i class="bi bi-plus-lg"></i>
+            Баримт үүсгэх
+          </a>
+        </div>
+
+        <div class="mydocs-tools">
+          <div class="mydocs-tabs">
+            <button class="mydocs-tab active" data-filter="all">All</button>
+            <button class="mydocs-tab" data-filter="pending">Хүлээгдэж байгаа</button>
+            <button class="mydocs-tab" data-filter="approved">Баталгаажсан</button>
+          </div>
+          <div class="inbox-search-group">
+            <div class="inbox-search">
+              <i class="bi bi-search"></i>
+              <input type="text" placeholder="Search..." />
+            </div>
+            <button class="inbox-date-btn"><i class="bi bi-calendar-check"></i> 2026.02.06</button>
+          </div>
+        </div>
+
+        <div class="table-shell mydocs-table-shell">
+          <table class="doc-table mydocs-table">
+            <thead>
+              <tr>
+                <th>Д/д</th>
+                <th>Төлөв</th>
+                <th>АБ дугаар</th>
+                <th>Үүсгэсэн огноо</th>
+                <th>Хаашаа явуулсан</th>
+                <th>Хариутай эсэх</th>
+                <th>Нэр</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="mydoc-row" data-status="pending" data-href="document-assignment-pending.html">
+                <td>87</td>
+                <td><span class="status pending">хүлээгдэж байгаа</span></td>
+                <td>Б2045982536</td>
+                <td>2026.01.02</td>
+                <td>Баянгол дүүргийн Засаг даргын тамгын газар</td>
+                <td><span class="status yes">Тийм</span></td>
+                <td>Баянгол дүүрэг</td>
+              </tr>
+              <tr class="mydoc-row" data-status="pending" data-href="document-assignment-pending.html">
+                <td>87</td>
+                <td><span class="status pending">хүлээгдэж байгаа</span></td>
+                <td>Б2045982536</td>
+                <td>2026.01.02</td>
+                <td>Баянгол дүүргийн Засаг даргын тамгын газар</td>
+                <td><span class="status yes">Тийм</span></td>
+                <td>Баянгол дүүрэг</td>
+              </tr>
+              <tr class="mydoc-row" data-status="approved" data-href="document-assignment-approved.html">
+                <td>87</td>
+                <td><span class="status approved">баталгаажсан</span></td>
+                <td>Б2045982536</td>
+                <td>2026.01.02</td>
+                <td>Баянгол дүүргийн Засаг даргын тамгын газар</td>
+                <td><span class="status yes">Тийм</span></td>
+                <td>Баянгол дүүрэг</td>
+              </tr>
+              <tr class="mydoc-row" data-status="approved" data-href="document-assignment-approved.html">
+                <td>87</td>
+                <td><span class="status approved">баталгаажсан</span></td>
+                <td>Б2045982536</td>
+                <td>2026.01.02</td>
+                <td>Баянгол дүүргийн Засаг даргын тамгын газар</td>
+                <td><span class="status yes">Тийм</span></td>
+                <td>Баянгол дүүрэг</td>
+              </tr>
+              <tr class="mydoc-row" data-status="new" data-href="document-assignment.html">
+                <td>87</td>
+                <td><span class="status new-soft">шинэ</span></td>
+                <td>Б2045982536</td>
+                <td>2026.01.02</td>
+                <td>Баянгол дүүргийн Засаг даргын тамгын газар</td>
+                <td><span class="status yes">Тийм</span></td>
+                <td>Баянгол дүүрэг</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mydocs-footer">
+          <span>Нийт 186 ширхэг</span>
+          <div class="mydocs-pagination">
+            <button class="pager-icon" aria-label="prev"><i class="bi bi-chevron-left"></i></button>
+            <span>Өмнөх</span>
+            <span class="page-num">1</span>
+            <button class="page-btn active">2</button>
+            <span class="dots">...</span>
+            <span>Дараах</span>
+            <button class="pager-icon" aria-label="next"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="modal-backdrop hidden" id="mydocsSuccessModal">
+      <div class="success-pop mydocs-success-pop">
+        <button class="close" id="closeMydocsSuccess" aria-label="Хаах">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        <div class="success-icon">
+          <i class="bi bi-check-lg"></i>
+        </div>
+        <h4>Амжилттай</h4>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
